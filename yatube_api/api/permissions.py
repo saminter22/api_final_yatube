@@ -8,7 +8,7 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
                 or obj.author == request.user)
 
 
-class IsAuthenticated(permissions.BasePermission):
+# class IsAuthenticated(permissions.BasePermission):
 
-    def has_permission(self, request, view):
-        return request.user.is_authenticated
+#     def has_permission(self, request, view):
+#         return request.user.is_authenticated
